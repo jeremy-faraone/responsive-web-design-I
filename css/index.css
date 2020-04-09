@@ -1,3 +1,8 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -42,7 +47,6 @@ table {
 	border-spacing: 0;
 }
 
-/* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
 }
@@ -58,98 +62,238 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 15px;
 }
 
-/* Your code starts here! */
 .container {
-
-	width: 900px;
-	margin-left: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
 }
-header nav {
-	display: inline-block;
-	margin-top: 60px;
-	
+.top {
+	margin-left: 5%;
+	display: flex;
+	flex-wrap: wrap;
+    width: 60%;
+	justify-content: space-between;
+	align-items: center;
 }
-header nav a {
-	margin: 0 20px;
-	color: gray;
+.top > a {
+	color: lightgray;
 	text-decoration: none;
 }
-header .logo{
-	margin-left: 130px;
+.logo{
+	margin: 2%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: baseline;
 }
-
+.box {
+    margin-top: 5%;
+    margin-bottom: 5%;
+	display: flex;
+	justify-content: space-between;
+}
 .box_1{
-	margin-left: 80px;
-	margin-top: 90px;
-	padding: 70px 0;
-	display: inline-block;
-	font-size: 60px;
+	margin-left: 15%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 70px;
 	font-family: 'Bangers', 'cursive';
 	text-align: center;
-	vertical-align: center;
 }
 .get {
-	padding: 5px;
-	font-size: 16px;
+	width: 45%;
+	margin-top: 5%;
+	padding: 5%;
+	display: flex;
+	justify-content: space-around;
+	font-size: 20px;
 	text-align: center;
 	border: 1px solid black;
 }
 
 .round {
-	margin-top: 70px;
-	margin-left: 150px;
-	display: inline-block;
-	vertical-align: top;
+	margin-right: 10%;
+	display: flex;
+	align-items: flex-end;
 }
- .features {
-	 width: 445px;
-	 display: inline-block;
- }
- .about {
-	 margin-top: 25px;
-	 margin-bottom: 35px;
-	 width: 425px;
-	 display: inline-block;
- }
- .container2 {
-	 font-weight: bold;
-	 margin-left: 40px;
-	 width: 900px;
-	 border-top: 1px solid black;
- }
- .mid_page {
-	margin-left: 40px;
-}
-.services {
-	width: 275px;
-	display: inline-block;
-}
-.product {
-	margin-left: 15px;
-	width: 275px;
-	display: inline-block;
-}
-.vision {
-	margin-left: 15px;
-	width: 275px;
-	display: inline-block;
-}
-.container3 {
-	width: 900px;
+.container2 {
+    margin: 0 auto;
+    padding-top: 2%;
+    padding-bottom: 3%;
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	border-top: 1px solid black;
+} 
+.container2 h1, h2 {
+	font-size: 25px;
 	font-weight: bold;
-	margin-left: 40px;
-	margin-top: 25px;
-	padding-bottom: 25px;
-	margin-bottom: 25px;
-	border-bottom: 1px solid black;
 }
-.contact {
-	font-weight: bold;
-	margin-left: 40px;
+.container2 p {
+    font-size: 20px;
+}
+.features {
+	 width: 45%;
+}
+.about {
+	 width: 45%;
 }
 
-footer {
+.middle-img {
+   width: 80%; 
+}
+.mid_page {
+	display: flex;
+	justify-content: center;
+}
+.container3 {
+    margin: 0 auto;
+	padding-top: 2%;
+    padding-bottom: 3%;
+    display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 80%;
+	border-top: 1px solid black;
+}
+.services {
+	width: 40%;
+}
+.product {
+	padding-left: 2%;
+	width: 40%;
+}
+.vision {
+	padding-left: 2%;
+	width: 40%;
+}
+.container3 h3, h4, h5 {
+	font-size: 25px;
 	font-weight: bold;
-	margin-top: 40px;
-	margin-left: 400px;
+}
+.container3 p {
+	font-size: 20px;
+}
+
+.contact {
+	margin-left: 10%;
+	display: flex;
+	flex-direction: column;
+    justify-content: space-evenly;
+    border-top: 1px solid black;
+    width: 80%;
+    padding-top: 15px;
+}
+.contact h6 {
+	font-weight: bold;
+	font-size: 25px;
+}
+.contact address, p, a{
+	font-size: 20px;
+}
+footer {
+	margin: 10%;
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	
+}
+
+@media (max-width: 800px){
+    .container {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+    .get {
+        font-size: 15px;
+    }
+    .logo {
+        width: 25%;
+        margin: 0 auto;
+        padding:20px 0px 20px 0px;
+        align-items: center;
+    }
+    .top {
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .top a {
+        padding: 5px;
+    }
+    .box .round {
+        display: none;
+    }
+    .box_1 {
+        margin: 0 auto;
+    }
+    .container2 p {
+        font-size: 15px;
+    }
+    .container3 p {
+        font-size: 15px;
+    }
+    .contact address, p, a{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .top {
+        flex-direction: column;
+        border-top: 1px solid dimgray;
+    }
+    .top a {
+        width: 100%;
+        padding: 0 auto;
+        text-align: center;
+        border-bottom: 1px solid dimgray;
+    }
+    .get {
+        font-size: 12px;
+    }
+    .container {
+        align-items: center;
+    }
+    .container2 {
+        flex-direction: column;
+    }
+    .features {
+        padding-bottom: 15px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .about {
+        padding-bottom: 15px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .container3 {
+        flex-direction: column;
+    }
+    .services {
+        padding-bottom: 15px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .product {
+        padding-left: 0;
+        padding-bottom: 15px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .vision {
+        padding-left: 0;
+        padding-bottom: 15px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .contact {
+        width: 80%;
+    }
+    .box_1 {
+        font-size: 50px;
+    }
 }
