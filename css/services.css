@@ -1,0 +1,362 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bangers', cursive;
+	font-size: 20px;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+body {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+p {
+	font-size: 18px;
+}
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+}
+.top {
+	display: flex;
+	flex-wrap: wrap;
+    width: 60%;
+	justify-content: space-between;
+	align-items: center;
+}
+.top > a {
+	color: gray;
+	text-decoration: none;
+}
+.logo{
+	margin-top: 2%;
+	margin-left: 2%;
+	margin-bottom: 2%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: baseline;
+}
+.services-header-img {
+	width: 100%;
+}
+
+.serv {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	display: flex;
+	border-bottom: 2px solid lightgrey;
+}
+.services {
+	margin-bottom: 5%;
+}
+
+.container2{
+	display: flex;
+}
+
+.container2 div {
+	display: flex;
+	flex-flow: column wrap;
+	border: 1px solid black;
+	margin: 2.5%;
+	padding: 2%;
+	background: lightgrey;
+}
+
+.container2 button {
+	text-align: center;
+	width: 35%;
+	padding: 2%;
+	cursor: pointer;
+	outline: none;
+	color: white;
+	background-color: black;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #999;
+}
+.container2 button:hover {
+	background-color: red;
+}
+.container2 button:active {
+	background-color: maroon;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+.container3 {
+	display: flex;
+}
+
+.container3 div {
+	display: flex;
+	flex-flow: column wrap;
+	border: 1px solid black;
+	margin: 2.5%;
+	padding: 2%;
+	background: lightgrey;
+}
+
+.container3 button {
+	text-align: center;
+	width: 35%;
+	padding: 2%;
+	cursor: pointer;
+	outline: none;
+	color: white;
+	background-color: black;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #999;
+}
+.container3 button:hover {
+	background-color: red;
+}
+.container3 button:active {
+	background-color: maroon;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+.container4 {
+	display: flex;
+	padding-bottom: 5%;
+	border-bottom: 2px solid black;
+}
+
+.container4 div {
+	display: flex;
+	flex-flow: column wrap;
+	border: 1px solid black;
+	margin: 2.5%;
+	padding: 2%;
+	background: lightgrey;
+}
+
+.container4 button {
+	text-align: center;
+	width: 35%;
+	padding: 2%;
+	cursor: pointer;
+	outline: none;
+	color: white;
+	background-color: black;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #999;
+}
+
+.container4 button:hover {
+	background-color: red;
+}
+.container4 button:active {
+	background-color: maroon;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+.container5 {
+	display: flex;
+	margin-top: 7.5%;
+}
+
+ul{
+	margin-left: 5%;
+	list-style-type: square;
+}
+
+.services-info-img {
+	width: 40%;
+	margin-left: 5%;
+}
+
+header {
+	font-family: 'Bangers', cursive;
+	font-size: 30px;
+	font-weight: bold;	
+}
+
+footer {
+	margin: 10%;
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+
+
+
+@media (max-width: 800px) {
+	.container{
+        flex-direction: column-reverse;
+		justify-content: space-between;
+	}
+	 nav.top{
+		width: 90%;
+		background-color: #333;
+		overflow: auto;
+		white-space: wrap;
+	}
+	.top{
+		display: inline-block;
+		color: white;
+		text-align: center;
+		padding: 25px;
+		text-decoration: none;
+	}
+	nav.top a {
+		padding: 15px;
+	}
+	.top a:hover{
+		background-color: #777;
+
+	}
+	.container5 {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	.services-info-img{
+		margin-bottom: 5%;	
+	}	
+	h6 {
+		text-align: center;
+	}
+	.logo {
+        width: 25%;
+        margin: 0 auto;
+        padding:20px 0px 25px 0px;
+        align-items: center;
+    }
+    .top {
+        justify-content: space-between;
+		margin: 0 auto;
+	}
+    .top a {
+		padding: 5px;
+	}
+	.container a:hover {
+		color: red;
+	}
+	.services-header-img {
+		padding-top: 2%;
+		transition: ease-in;
+	}
+	.services header {
+		text-align: center;
+	}
+}
+
+@media (max-width: 500px){
+		.top{
+			display: flex;
+			flex-direction: column;
+			color: white;
+			text-align: center;
+			padding: 25px;
+			text-decoration: none;
+		}
+		nav.top{
+			width: 40%;
+		}
+		.container2 {
+			flex-direction: column;
+		}
+		.container2 div {
+			padding: 5%;
+		}
+		.container3 {
+			flex-direction: column;
+		}
+		.container3 div {
+			padding: 5%;
+		}
+		.container4 {
+			flex-direction: column;
+		}
+		.container4 div {
+			padding: 5%;
+		}
+		.box1 {
+			align-items: center;
+		}
+		.box2 {
+			align-items: center;
+		}
+		.box3 {
+			align-items: center;
+		}
+		.box4 {
+			align-items: center;
+		}
+		.box5 {
+			align-items: center;
+		}
+		.box6 {
+			align-items: center;
+		}
+
+	}
+
+	
+
+}
