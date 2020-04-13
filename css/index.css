@@ -78,7 +78,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .top > a {
 	color: lightgray;
-	text-decoration: none;
+    text-decoration: none;
+    font-size: 25px;
 }
 .logo{
 	margin: 2%;
@@ -128,11 +129,11 @@ h1, h2, h3, h4, h5, h6 {
 	border-top: 1px solid black;
 } 
 .container2 h1, h2 {
-	font-size: 25px;
+	font-size: 30px;
 	font-weight: bold;
 }
 .container2 p {
-    font-size: 20px;
+    font-size: 25px;
 }
 .features {
 	 width: 45%;
@@ -169,12 +170,12 @@ h1, h2, h3, h4, h5, h6 {
 	padding-left: 2%;
 	width: 40%;
 }
-.container3 h3, h4, h5 {
-	font-size: 25px;
+.container3 h3, h4, h5, h6{
+	font-size: 30px;
 	font-weight: bold;
 }
 .container3 p {
-	font-size: 20px;
+	font-size: 25px;
 }
 
 .contact {
@@ -185,20 +186,18 @@ h1, h2, h3, h4, h5, h6 {
     border-top: 1px solid black;
     width: 80%;
     padding-top: 15px;
+    font-size: 20px;
 }
 .contact h6 {
 	font-weight: bold;
-	font-size: 25px;
+	font-size: 30px;
 }
-.contact address, p, a{
-	font-size: 20px;
-}
+
 footer {
 	margin: 10%;
 	display: flex;
 	justify-content: center;
-	font-weight: bold;
-	
+    font-weight: bold;	
 }
 
 @media (max-width: 800px){
@@ -207,7 +206,7 @@ footer {
         justify-content: space-between;
     }
     .get {
-        font-size: 15px;
+        /* font-size: 15px; */
     }
     .logo {
         width: 25%;

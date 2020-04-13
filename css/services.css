@@ -59,7 +59,7 @@ html, body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Bangers', cursive;
-	font-size: 20px;
+	font-size: 30px;
 	letter-spacing: 1px;
 	margin-bottom: 15px;
 }
@@ -70,7 +70,7 @@ body {
 	margin-right: 5%;
 }
 p {
-	font-size: 18px;
+	font-size: 30px;
 }
 .container {
 	display: flex;
@@ -88,6 +88,7 @@ p {
 .top > a {
 	color: gray;
 	text-decoration: none;
+	font-size: 25px;
 }
 .logo{
 	margin-top: 2%;
@@ -110,7 +111,12 @@ p {
 .services {
 	margin-bottom: 5%;
 }
-
+.services p {
+	font-size: 25px;
+}
+.services header {
+	font-size: 30px;
+}
 .container2{
 	display: flex;
 }
@@ -218,7 +224,12 @@ p {
 	display: flex;
 	margin-top: 7.5%;
 }
-
+.container5 .final h6 {
+	font-size: 30px;
+}
+.container5 .final p {
+	font-size: 25px;
+}
 ul{
 	margin-left: 5%;
 	list-style-type: square;
@@ -243,7 +254,9 @@ footer {
 	font-size: 14px;
 }
 
-
+.container5 .final ul{
+	font-size: 20px;
+}
 
 
 @media (max-width: 800px) {
